@@ -1,0 +1,17 @@
+{
+  "name": "ts-monorepo",
+  "version": "1.0.0",
+  "description": "ts-enabled monorepo template",
+  "author": "Palokha Oleksandr",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "wsrun start"
+  },
+  "devDependencies": {
+    "wsrun": "^5.2.0"
+  }
+}

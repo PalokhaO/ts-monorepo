@@ -1,0 +1,14 @@
+{
+  "name": "models",
+  "version": "1.0.0",
+  "description": "Models shared between different projects",
+  "main": "dist/index.js",
+  "types": "dist",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc --watch --incremental"
+  },
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}

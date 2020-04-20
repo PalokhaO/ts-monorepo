@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "allowJs": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "target": "esnext",
+        "outDir": "dist",
+        "declaration": true,
+        "declarationMap": true,
+        "alwaysStrict": true,
+        "preserveWatchOutput": true,
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+}
