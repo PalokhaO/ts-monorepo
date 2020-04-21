@@ -6,7 +6,7 @@
   "types": "dist",
   "license": "MIT",
   "scripts": {
-    "start": "tsc --watch --incremental"
+    "start": "tsc --watch"
   },
   "dependencies": {
     "typescript": "^3.8.3"
