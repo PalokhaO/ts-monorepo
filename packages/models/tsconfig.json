@@ -16,6 +16,8 @@
         "declarationMap": true,
         "alwaysStrict": true,
         "preserveWatchOutput": true,
+        "pretty": true,
+        "allowSyntheticDefaultImports": true,
     },
     "include": [
         "src/**/*"
