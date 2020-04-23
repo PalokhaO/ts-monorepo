@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "wsrun start"
+    "start": "wsrun --rewrite-paths start"
   },
   "devDependencies": {
     "wsrun": "^5.2.0"
