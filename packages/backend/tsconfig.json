@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "allowJs": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "target": "es2015",
+        "outDir": "dist",
+        "declaration": true,
+        "declarationMap": true,
+        "alwaysStrict": true,
+        "preserveWatchOutput": true,
+        "pretty": true,
+        "allowSyntheticDefaultImports": true,
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+}
