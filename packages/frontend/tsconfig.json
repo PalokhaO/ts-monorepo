@@ -20,6 +20,8 @@
     "jsx": "react",
     "inlineSourceMap": true,
     "inlineSources": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
   },
   "include": [
     "src"
