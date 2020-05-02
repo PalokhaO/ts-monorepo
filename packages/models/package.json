@@ -2,8 +2,8 @@
   "name": "models",
   "version": "1.0.0",
   "description": "Models shared between different projects",
-  "main": "dist/index.js",
-  "types": "dist",
+  "main": "build/index.js",
+  "types": "build",
   "license": "MIT",
   "scripts": {
     "start": "tsc --watch"
