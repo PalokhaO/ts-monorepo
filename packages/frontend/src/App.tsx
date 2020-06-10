@@ -1,9 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {hello} from 'models';
+import {hello, Test} from 'models';
 
 function App() {
+  const test: Test = {
+    kek: 'lol',
+  };
   return (
     <div className="App">
       <header className="App-header">
