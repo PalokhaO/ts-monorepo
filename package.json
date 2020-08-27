@@ -9,7 +9,10 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "wsrun --rewrite-paths start"
+    "start": "yarn workspace-run start",
+    "build": "yarn workspace-run start",
+    "test": "yarn workspace-run start",
+    "workspace-run": "wsrun --rewrite-paths -r -m"
   },
   "devDependencies": {
     "wsrun": "^5.2.0"

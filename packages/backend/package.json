@@ -6,19 +6,21 @@
   "types": "build",
   "license": "MIT",
   "scripts": {
-    "start": "tsc && concurrently npm:build:dev npm:launch:dev",
+    "start": "npm build && concurrently npm:build:dev npm:launch:dev",
     "build": "tsc",
     "build:dev": "tsc --watch",
     "launch:dev": "nodemon --watch build build/index.js"
   },
   "dependencies": {
-    "@types/cors": "^2.8.6",
-    "@types/express": "^4.17.6",
-    "concurrently": "^5.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "models": "1.0.0",
-    "nodemon": "^2.0.3",
-    "typescript": "^3.8.3"
+    "models": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.7",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4",
+    "typescript": "^4.0.2"
   }
 }
