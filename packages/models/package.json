@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Models shared between different projects",
   "main": "build/index.js",
+  "type": "module",
   "types": "build",
   "license": "MIT",
   "scripts": {

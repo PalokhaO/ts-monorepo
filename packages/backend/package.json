@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "The backend of the sample project",
   "main": "build/index.js",
+  "type": "module",
   "types": "build",
   "license": "MIT",
   "scripts": {
-    "start": "npm build && concurrently npm:build:dev npm:launch:dev",
+    "start": "npm run build && concurrently npm:build:dev npm:launch:dev",
     "build": "tsc",
     "build:dev": "tsc --watch",
-    "launch:dev": "nodemon --watch build build/index.js"
+    "launch:dev": "nodemon --watch build --experimental-specifier-resolution=node build/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
