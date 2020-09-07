@@ -1,6 +1,7 @@
 {
-  "name": "frontend",
+  "name": "react-frontend",
   "version": "0.1.0",
+  "description": "The React.js frontend of the sample project",
   "private": true,
   "type": "module",
   "dependencies": {

@@ -13,7 +13,7 @@ Package structure:
 ```
 | packages
 | -- models
-| -- frontend
+| -- react
 ```
 
 /packages/models/src/index.tsx:
@@ -21,7 +21,7 @@ Package structure:
 export const hello: string = 'hello world!';
 ```
 
-/packages/frontend/src/App.tsx:
+/packages/react/src/App.tsx:
 ```
 import { hello } from 'models';
 ```

@@ -1,7 +1,7 @@
 {
-  "name": "backend",
+  "name": "express-backend",
   "version": "1.0.0",
-  "description": "The backend of the sample project",
+  "description": "The Express.js backend of the sample project",
   "main": "build/index.js",
   "type": "module",
   "types": "build",
