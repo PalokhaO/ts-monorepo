@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "start": "yarn workspace-run start",
-    "build": "yarn workspace-run build",
+    "build": "yarn workspace-run -t build",
     "test": "yarn workspace-run test",
     "workspace-run": "wsrun --rewrite-paths -r -m"
   },
