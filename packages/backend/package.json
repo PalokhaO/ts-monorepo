@@ -7,7 +7,7 @@
   "types": "build",
   "license": "MIT",
   "scripts": {
-    "start": "npm run build && concurrently npm:build:dev npm:launch:dev",
+    "start": "yarn build && concurrently npm:build:dev npm:launch:dev",
     "build": "tsc",
     "build:dev": "tsc --watch",
     "launch:dev": "nodemon --watch build --experimental-specifier-resolution=node build/index.js"
