@@ -31,5 +31,10 @@ The workspace has a top-level dependency [wsrun](https://github.com/hfour/wsrun)
 
 ## Current problems
  - New package.json `exports` is not supported by Typescript([tracking issue](https://github.com/microsoft/TypeScript/issues/33079)), so no quick&easy way to import child modules of the package (e.g. `models/my-file`)
+
+ 
+## Resolved problems
  - Typescript does not resolve import extensions on compile if compiling to ESM ([tracking issue](https://github.com/microsoft/TypeScript/issues/16577)). `import from './some-file'` stays unchanged in JS, while it should be `import from './some-file.js'` to work natively in Node. Had to step down to CommonJS. Some alternative solutions would be bundlers or [ttypescript](https://github.com/cevek/ttypescript) + [this brilliant transformer](https://github.com/Zoltu/typescript-transformer-append-js-extension/).
+ **Resolved:** using `--experimental-specifier-resolution=node` allows importing modules without extension
  - CommonJS does not support `esnext` syntax even in newer (13.x) version of node. Had to step down to ES2015 compilation target.
+ **Resolved:** see above
