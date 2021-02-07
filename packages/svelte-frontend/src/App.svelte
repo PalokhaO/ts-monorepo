@@ -1,11 +1,14 @@
 <script lang="ts">
-	import {hello} from 'models';
+	import {hello, Test} from 'models';
 
 	export let name: string;
+	const test: Test = {
+		kek: 'lol',
+	};
 </script>
 
 <main>
-	<h1>{hello} {name}!</h1>
+	<h1>{hello(name)}, {test.kek}</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 

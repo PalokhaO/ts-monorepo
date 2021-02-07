@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import { hello } from "models";
 
 const app = express();
 
@@ -10,7 +11,7 @@ app.use(cors({
 
 app.get('/hello', (req, res) => {
     res.json({
-        hello: 'world'
+        hello: hello(req.query.name?.toString() || '%defaultName%'),
     });
 });
 

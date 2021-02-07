@@ -1,4 +1,4 @@
-export const hello: string = 'hello world!';
+export const hello = (name: string) => `Hello ${name}!`;
 
 export interface Test {
     kek: 'lol'
